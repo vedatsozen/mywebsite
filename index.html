@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<button type="button" onclick="changetheme()">Read My Profile</button>
+<img class="profil" src="images/profilfoto.jpg">
+<h1>FRONT END DEVELOPER</h1>
+<h2>I make <span>interactive</span> web sites</h2>
+<a href="https://www.github.com/vedatsozen" target="_blank">My Github Link</a>
+<a href="https://www.codepen.io/vedatsozen" target="_blank">My Codepen Link</a>
+<a href="https://www.twitter.com/vedatsozen"target="_blank">My Twitter Link</a>
+<p>I am open to remote job offers. You can reach me by twitter.</p>
+<div id="myprofil">
+    <p class="myprofil">Hello. <br>My Name is Vedat Sözen.<br>I was born in 1982 in Turkey. <br>I studied economics in university. 
+        <br>I can speak english and spanish. <br>I am a Junior Frond End Developer.
+        <br>I am good at html and css and improving my javascript skills. <br>If you need an interactive web site,
+        don't hesitate to write to me. See you.
+    </p>
+<div id="close" onclick="closeprofil()">X</div>
+</div>
+</body>
+
+<script>
+    function changetheme() {
+
+document.getElementById("myprofil").style = "visibility:visible";
+
+    }
+
+    function closeprofil() {
+        document.getElementById("myprofil").style = "visibility:hidden";
+    }
+</script>
+
+</html>
