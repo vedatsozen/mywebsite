@@ -110,8 +110,8 @@ a {
     
     img.profil {
     
-    height:40%;
-    width:40%;
+    height:50%;
+    width:50%;
     border-radius: 50%;
     border:5px solid white;
     opacity:1;
@@ -153,7 +153,7 @@ a {
         width:90%;
         padding: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 10px;
+        font-size: 13px;
         letter-spacing: 3px;
     }
     
@@ -188,7 +188,7 @@ a {
         background-color: black;
         color: white;
         padding: 3px;
-        font-size:10px;
+        font-size:13px;
         width: fit-content;
     
     }
