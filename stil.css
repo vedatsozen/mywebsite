@@ -306,14 +306,14 @@ img.portfolio {
    ul li {
        margin: auto;
        display: inline-block;
-       margin-right:3px;
+
    }
    
    a.menu {
        text-decoration: none;
        color:white;
        display: block;
-       padding: 10px;
+       padding:5px;
        border-radius: 3px;
        letter-spacing: 3px;
        font-weight: bold;
