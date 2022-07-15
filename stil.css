@@ -110,6 +110,7 @@ a.menu:hover {
     height: 200px;
     width:fit-content;
     text-align: center;
+    box-shadow:3px 3px 3px black;
 
     
 }
