@@ -218,6 +218,14 @@ img.portfolio {
     width:100%;
     margin: auto;
 }
+ 
+ hr {
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    width: 80%;
+    height: 1px;
+}
 
 }
 
