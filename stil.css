@@ -272,16 +272,16 @@ img.portfolio {
        top:3px;
        display: flex;
        flex-direction: row;
+       
    
    }
    
    img.social {
        margin: auto;
        margin-right: 15px;
-       height:55px;
-       width:55px;
+       height:45px;
+       width:45px;
        opacity: 0.5;
-       border: 1px dashed white;
        padding: 5px;
    }
    
@@ -299,25 +299,25 @@ img.portfolio {
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin-right: 0px;
+ 
      
    }
    
    ul li {
        margin: auto;
        display: inline-block;
-
+       margin-right: 5px;
    }
    
    a.menu {
        text-decoration: none;
        color:white;
        display: block;
-       padding:5px;
+       padding: 10px;
        border-radius: 3px;
        letter-spacing: 3px;
        font-weight: bold;
-       font-size: 12px;
+       font-size:10px;
    }
    
    a.menu:hover {
@@ -329,37 +329,53 @@ img.portfolio {
    #middlesection {
        margin: auto;
        margin-top:10px;
-       height: 200px;
+       height:fit-content;
+       padding:10px;
        width:90vw;
        text-align: center;
+       box-sizing: border-box;
+       border: 3px solid white;
+       box-shadow: 3px 3px 3px black;
    
        
    }
    
    h1 {
        margin: auto;
-       font-size:30px;
+       font-size:35px;
        color:white;
        padding: 5px;
    
        
    }
+
+   h1.portfolio {
+    margin: auto;
+    margin-top:10px;
+    font-size:25px;
+    color:white;
+    padding: 5px;
+
+    
+}
    
    h1.middlesection {
        margin: auto;
+       margin-top:5px;
        font-size:30px;
        display: block;
        color:deepskyblue;
        background-color: white;
        padding: 5px;
-       border: 1px dashed deepskyblue;
+       border: 1px solid deepskyblue;
+       border-radius: 3px;
        
    }
    
    h1.logo {
        margin: auto;
        margin-left: 0px;
-       font-size:20px;
+       font-size:16px;
        display: block;
        background-color: white;
        color:deepskyblue;
@@ -374,10 +390,10 @@ img.portfolio {
    img.profil {
        margin: auto;
        margin-top:30px;
-       height:200px;
-       width:200px;
+       height:150px;
+       width:150px;
        border-radius: 50%;
-       border: 2px dashed white;
+       border: 2px solid white;
    }
    
    #whoami {
@@ -390,8 +406,8 @@ img.portfolio {
        text-align: justify;
    }
    
-   h3 {
-       font-size: 20px;
+   h3.interactive {
+       font-size:15px;
        margin: auto;
        margin-top: 10px;
        color: white;
@@ -406,28 +422,44 @@ img.portfolio {
    
    #portfolio {
        margin: auto;
-       margin-top:50px;
-       height: 1000px;
+       margin-top:10px;
+       height:fit-content;
+       padding: 5px;
+       box-sizing: border-box;
        width: 100%;
-       border-top: 1px dashed white;
+       text-align: center;
+       background-color:deepskyblue;
+     
+
    }
    
    img.arrow {
        margin: auto;
-       height: 30px;
-       width: 30px;
+       height:15px;
+       width:15px;
        margin-top: 5px;
        background-color: deepskyblue;
    }
    
    a.arrow {
        background-color: deepskyblue;
+       margin: auto;
+
    }
 
    img.portfolio {
     width: 90%;
-    margin-top: 15px;
-    border: 1px dashed white;
+    margin-top:2px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px black;
+   }
+
+   
+   img.portfolio1 {
+    width: 90%;
+    margin-top:10px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px black;
    }
    
    #code {
@@ -437,5 +469,15 @@ img.portfolio {
     width:100%;
     height: 50px;
 }
+
+hr {
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    width: 80%;
+    height: 1px;
+}
+
+
 
    }
