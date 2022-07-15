@@ -209,7 +209,15 @@ img.portfolio {
     width: 90%;
     margin-top: 15px;
     border: 1px dashed white;
+    box-shadow: 3px 3px 3px black;
 }
+ 
+ img.portfolio1 {
+    width: 90%;
+    margin-top:10px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px black;
+   }
 
 #code {
     color: white;
