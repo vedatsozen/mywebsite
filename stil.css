@@ -12,7 +12,7 @@ box-sizing: border-box;
  }
 
 body {
-    background-color: deepskyblue;
+    background-image:linear-gradient(to right,#333333,#dd1818);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     text-align: center;
@@ -31,17 +31,6 @@ body {
  
 }
 
-#logo {
-    margin: auto;
-    margin-left: 0px;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    padding: 0px;
-    box-sizing: border-box;
-
-    
-}
 
 #socialaccounts {
     margin: auto;
@@ -77,7 +66,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 0px;
+
   
 }
 
@@ -99,8 +88,8 @@ a.menu {
 }
 
 a.menu:hover {
-    background-color: white;
-    color: deepskyblue;
+    background-color: black;
+    color:white;
     transition: 300ms ease-in-out;
 }
 
@@ -110,7 +99,6 @@ a.menu:hover {
     height:fit-content;
     width:fit-content;
     text-align: center;
-    box-shadow:3px 3px 3px black;
     padding:10px;
     box-sizing:border-box;
 
@@ -119,7 +107,7 @@ a.menu:hover {
 
 h1 {
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
     color:white;
     padding: 5px;
 
@@ -130,10 +118,10 @@ h1.middlesection {
     margin: auto;
     font-size: 50px;
     display: block;
-    color:deepskyblue;
-    background-color: white;
+    color:white;
+    background-color: black;
     padding: 5px;
-    border: 1px dashed deepskyblue;
+    
     
 }
 
@@ -154,11 +142,12 @@ h1.logo {
 
 img.profil {
     margin: auto;
-    margin-top:30px;
+    margin-top:20px;
     height:200px;
     width:200px;
     border-radius: 50%;
-    border: 2px solid white;
+    border:5px solid black;
+    filter:drop-shadow(3px 3px 3px black);
 }
 
 #whoami {
@@ -186,38 +175,55 @@ a.social {
 }
 
 #portfolio {
-    margin: auto;
-    margin-top:70px;
-    height:fit-content;
-    width: 100%;
-    
+  margin:auto;
+  margin-top:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 5px;
+
 }
 
-img.arrow {
-    margin: auto;
-    height: 30px;
-    width: 30px;
-    margin-top: 5px;
-    background-color: deepskyblue;
-}
-
-a.arrow {
-    background-color: deepskyblue;
+div.portfolio {
+  width:45%;
 }
 
 img.portfolio {
-    width: 90%;
+
+    width:100%;
     margin-top: 15px;
-    border: 1px dashed white;
+    border: 3px solid white;
     box-shadow: 3px 3px 3px black;
 }
+
+img.portfolio:hover {
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    transform:scale(1.1)
+}
+
+img.arrow {
+    position: fixed;
+    top:50%;
+    right:0px;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    padding:0px;
+}
+
+
+h1.portfolio {
+    margin-top: 30px;
+    padding:20px;
+    
+}
+
  
- img.portfolio1 {
-    width: 90%;
-    margin-top:10px;
-    border: 1px solid white;
-    box-shadow: 3px 3px 3px black;
-   }
+
 
 #code {
     color: white;
@@ -229,11 +235,13 @@ img.portfolio {
  
  hr {
     margin: auto;
-    margin-top: 10px;
+    margin-top:40px;
     color: white;
-    width: 80%;
-    height: 1px;
+    width:5%;
+    height:1px;
+    border:1px solid white;
 }
+
 
 }
 
@@ -251,7 +259,7 @@ img.portfolio {
     }
    
    body {
-       background-color: deepskyblue;
+       background-image:linear-gradient(to right,#333333,#dd1818);
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        box-sizing: border-box;
        text-align: center;
@@ -262,25 +270,16 @@ img.portfolio {
    #menu {
        margin: auto;
        height:50px;
-       width:100%;
+       width:95%;
        display: flex;
-       flex-direction: row;
-       justify-content: center;
+       flex-direction: column;
+       justify-content:center;
        align-items: center;
+  
+      
     
    }
    
-   #logo {
-       margin: auto;
-       margin-left: 0px;
-       height: 100%;
-       width: 50%;
-       display: flex;
-       padding: 0px;
-       box-sizing: border-box;
-   
-       
-   }
    
    #socialaccounts {
        margin: auto;
@@ -290,15 +289,14 @@ img.portfolio {
        top:3px;
        display: flex;
        flex-direction: row;
-       
    
    }
    
    img.social {
        margin: auto;
        margin-right: 15px;
-       height:45px;
-       width:45px;
+       height:55px;
+       width:55px;
        opacity: 0.5;
        padding: 5px;
    }
@@ -311,36 +309,38 @@ img.portfolio {
    ul {
        margin: auto;
        height: 100%;
-       width:fit-content;
-       text-align: center;
-       padding: 0px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
- 
+       width:90vw;
+       display:flex;
+       justfiy-content:space-between;
+       padding: 10px;
+     
+   
      
    }
    
    ul li {
        margin: auto;
        display: inline-block;
-       margin-right: 5px;
+ 
    }
    
    a.menu {
        text-decoration: none;
        color:white;
        display: block;
-       padding: 10px;
+       padding:10px;
        border-radius: 3px;
        letter-spacing: 3px;
        font-weight: bold;
-       font-size:10px;
-   }
+       font-size: 10px;
+       text-align: center;
+ 
+    
+    }
    
    a.menu:hover {
-       background-color: white;
-       color: deepskyblue;
+       background-color: black;
+       color:white;
        transition: 300ms ease-in-out;
    }
    
@@ -348,52 +348,38 @@ img.portfolio {
        margin: auto;
        margin-top:10px;
        height:fit-content;
-       padding:10px;
-       width:90vw;
+       width:fit-content;
        text-align: center;
-       box-sizing: border-box;
-       border: 3px solid white;
-       box-shadow: 3px 3px 3px black;
+       padding:10px;
+       box-sizing:border-box;
    
        
    }
    
    h1 {
        margin: auto;
-       font-size:35px;
+       font-size: 40px;
        color:white;
        padding: 5px;
    
        
    }
-
-   h1.portfolio {
-    margin: auto;
-    margin-top:10px;
-    font-size:25px;
-    color:white;
-    padding: 5px;
-
-    
-}
    
    h1.middlesection {
        margin: auto;
-       margin-top:5px;
-       font-size:30px;
+       font-size: 50px;
        display: block;
-       color:deepskyblue;
-       background-color: white;
+       color:white;
+       background-color: black;
        padding: 5px;
-       border: 1px solid deepskyblue;
-       border-radius: 3px;
+       
        
    }
    
    h1.logo {
        margin: auto;
        margin-left: 0px;
-       font-size:16px;
+       font-size:20px;
        display: block;
        background-color: white;
        color:deepskyblue;
@@ -407,11 +393,12 @@ img.portfolio {
    
    img.profil {
        margin: auto;
-       margin-top:30px;
-       height:150px;
-       width:150px;
+       margin-top:20px;
+       height:200px;
+       width:200px;
        border-radius: 50%;
-       border: 2px solid white;
+       border:5px solid black;
+       filter:drop-shadow(3px 3px 3px black);
    }
    
    #whoami {
@@ -424,8 +411,8 @@ img.portfolio {
        text-align: justify;
    }
    
-   h3.interactive {
-       font-size:15px;
+   h3 {
+       font-size: 20px;
        margin: auto;
        margin-top: 10px;
        color: white;
@@ -439,63 +426,72 @@ img.portfolio {
    }
    
    #portfolio {
-       margin: auto;
-       margin-top:10px;
-       height:fit-content;
-       padding: 5px;
-       box-sizing: border-box;
-       width: 100%;
-       text-align: center;
-       background-color:deepskyblue;
-     
-
+     margin:auto;
+     margin-top:5px;
+     display: flex;
+     flex-direction: row;
+     justify-content:space-around;
+     align-items: center;
+     width:95vw;
+     flex-wrap: wrap;
+     gap: 5px;
+   
+   }
+   
+   div.portfolio {
+     width:95%;
+   }
+   
+   img.portfolio {
+   
+       width:100%;
+       margin-top: 15px;
+       border: 3px solid white;
+       box-shadow: 3px 3px 3px black;
+   }
+   
+   img.portfolio:hover {
+       cursor: pointer;
+       transition: 300ms ease-in-out;
+       transform:scale(1.1)
    }
    
    img.arrow {
+       position: fixed;
+       top:50%;
+       right:0px;
        margin: auto;
-       height:15px;
-       width:15px;
-       margin-top: 5px;
-       background-color: deepskyblue;
+       height: 30px;
+       width: 30px;
+       padding:0px;
    }
    
-   a.arrow {
-       background-color: deepskyblue;
-       margin: auto;
-
-   }
-
-   img.portfolio {
-    width: 90%;
-    margin-top:2px;
-    border: 1px solid white;
-    box-shadow: 3px 3px 3px black;
-   }
-
    
-   img.portfolio1 {
-    width: 90%;
-    margin-top:10px;
-    border: 1px solid white;
-    box-shadow: 3px 3px 3px black;
+   h1.portfolio {
+       margin-top: 30px;
+       padding:20px;
+       
    }
+   
+    
+   
    
    #code {
-    margin: auto;
-    color: white;
-    font-size: 16px;
-    width:100%;
-    height: 50px;
-}
-
-hr {
-    margin: auto;
-    margin-top: 10px;
-    color: white;
-    width: 80%;
-    height: 1px;
-}
-
-
-
+       color: white;
+       font-size: 16px;
+       height: 50px;
+       width:100%;
+       margin: auto;
+   }
+    
+    hr {
+       margin: auto;
+       margin-top:40px;
+       color: white;
+       width:5%;
+       height:1px;
+       border:1px solid white;
+   }
+   
+   
    }
