@@ -69,6 +69,7 @@ img.social:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style:none;
 
   
 }
