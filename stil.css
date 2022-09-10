@@ -213,7 +213,7 @@ img.arrow {
         text-align: center;
         padding: 0;
         margin: 0;
-        position: relative;
+      
    }
    
    #menu {
@@ -232,7 +232,6 @@ img.arrow {
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: yellow;
     box-sizing: border-box;
 
   
@@ -241,7 +240,7 @@ img.arrow {
 #menu > ul > li {
     margin: auto;
     display: inline-block;
-    background-color: red;
+
  
   
 }
