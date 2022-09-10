@@ -12,8 +12,8 @@ box-sizing: border-box;
  }
 
 body {
-    background-image:linear-gradient(to right,#333333,#dd1818);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #C4F1BE;
+    font-family: 'Supreme', sans-serif;
     box-sizing: border-box;
     text-align: center;
     overflow-y:auto;
@@ -46,15 +46,18 @@ body {
 img.social {
     margin: auto;
     margin-right: 15px;
-    height:55px;
-    width:55px;
-    opacity: 0.5;
-    padding: 5px;
+    height:35px;
+    width:35px;
+    padding:1px;
+    background-color:#C4F1BE;
+    box-sizing: unset;
 }
 
 img.social:hover {
     opacity: 1;
     cursor: pointer;
+    transform: scale(1.3);
+    transition: 400ms ease-in-out;
 }
 
 ul {
@@ -78,18 +81,18 @@ ul li {
 
 a.menu {
     text-decoration: none;
-    color:white;
+    color:#525B76;
     display: block;
     padding: 10px;
     border-radius: 3px;
-    letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+    width:100px;
 }
 
 a.menu:hover {
-    background-color: black;
-    color:white;
+    background-color:#525B76;
+    color:#C4F1BE;
     transition: 300ms ease-in-out;
 }
 
@@ -108,7 +111,7 @@ a.menu:hover {
 h1 {
     margin: auto;
     font-size: 40px;
-    color:white;
+    color:#525B76;
     padding: 5px;
 
     
@@ -116,55 +119,38 @@ h1 {
 
 h1.middlesection {
     margin: auto;
-    font-size: 50px;
+    font-size:50px;
     display: block;
+    background-color:#525B76;
     color:white;
-    background-color: black;
     padding: 5px;
+    box-shadow: 3px 3px 3px #525B76;
     
     
 }
 
-h1.logo {
-    margin: auto;
-    margin-left: 0px;
-    font-size:20px;
-    display: block;
-    background-color: white;
-    color:deepskyblue;
-    box-shadow: 3px 3px 3px black;
-    padding: 3px;
-    border-radius: 3px;
-    letter-spacing: 4px;
-    cursor: pointer;
-    margin-top: 0px;
-}
 
 img.profil {
     margin: auto;
     margin-top:20px;
-    height:200px;
-    width:200px;
+    height:150px;
+    width:150px;
     border-radius: 50%;
-    border:5px solid black;
-    filter:drop-shadow(3px 3px 3px black);
+    border: 4px solid #525B76;
+
 }
 
-#whoami {
-    margin: auto;
-    margin-top: 50px;
-    height:fit-content;
-    width: 100%;
-    border: 1px dashed white;
-    padding: 20px;
-    text-align: justify;
+img.social {
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 h3 {
     font-size: 20px;
     margin: auto;
     margin-top: 10px;
-    color: white;
+    color:#525B76;
     word-spacing: 5px;
     letter-spacing: 5px;
 }
@@ -172,37 +158,7 @@ h3 {
 a.social {
     text-decoration:none;
     background-color: none;
-}
-
-#portfolio {
-  margin:auto;
-  margin-top:5px;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  align-items: center;
-  width: 1200px;
-  flex-wrap: wrap;
-  gap: 5px;
-
-}
-
-div.portfolio {
-  width:45%;
-}
-
-img.portfolio {
-
-    width:100%;
-    margin-top: 15px;
-    border: 3px solid white;
-    box-shadow: 3px 3px 3px black;
-}
-
-img.portfolio:hover {
-    cursor: pointer;
-    transition: 300ms ease-in-out;
-    transform:scale(1.1)
+    
 }
 
 img.arrow {
@@ -215,35 +171,24 @@ img.arrow {
     padding:0px;
 }
 
-
-h1.portfolio {
-    margin-top: 30px;
-    padding:20px;
-    
-}
-
- 
-
-
-#code {
-    color: white;
-    font-size: 16px;
-    height: 50px;
-    width:100%;
+#portfoliocontainer {
+    height: fit-content;
+    width:90vw;
     margin: auto;
-}
- 
- hr {
-    margin: auto;
-    margin-top:40px;
-    color: white;
-    width:5%;
-    height:1px;
-    border:1px solid white;
+    margin-top: 100px;
+    box-sizing: border-box;
 }
 
+#portfoliocontainer > a > img {
+    height: 500px;
+    width: 1000px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 3px #525B76;
+}
 
 }
+
+/* RESPONSIVE DESIGN CODES */
 
 @media only screen and (max-width:480px) {
  
@@ -251,7 +196,8 @@ h1.portfolio {
     * {
    
    box-sizing: border-box;
-   
+   margin: 0;
+   padding: 0;
     }
     
     html {
@@ -259,26 +205,47 @@ h1.portfolio {
     }
    
    body {
-       background-image:linear-gradient(to right,#333333,#dd1818);
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       background-color: #C4F1BE;
+       font-family: 'Supreme', sans-serif;
        box-sizing: border-box;
        text-align: center;
-       overflow-y:auto;
-   
+       overflow-y:hidden;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        position: relative;
    }
    
    #menu {
-       margin: auto;
-       height:50px;
-       width:95%;
-       display: flex;
-       flex-direction: column;
-       justify-content:center;
-       align-items: center;
-  
-      
-    
+    height: 50px;
+    width:90vw;
+    margin: auto;
+
+
    }
+
+   #menu > ul {
+    margin: auto;
+    height: 100%;
+    width:fit-content;
+    padding:0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: yellow;
+    box-sizing: border-box;
+
+  
+}
+
+#menu > ul > li {
+    margin: auto;
+    display: inline-block;
+    background-color: red;
+ 
+  
+}
+
    
    
    #socialaccounts {
@@ -295,52 +262,35 @@ h1.portfolio {
    img.social {
        margin: auto;
        margin-right: 15px;
-       height:55px;
-       width:55px;
-       opacity: 0.5;
-       padding: 5px;
+       height:35px;
+       width:35px;
+       padding:1px;
+       background-color:#C4F1BE;
+       box-sizing: unset;
    }
    
    img.social:hover {
        opacity: 1;
        cursor: pointer;
+       transform: scale(1.3);
+       transition: 400ms ease-in-out;
    }
    
-   ul {
-       margin: auto;
-       height: 100%;
-       width:90vw;
-       display:flex;
-       justfiy-content:space-between;
-       padding: 10px;
-     
-   
-     
-   }
-   
-   ul li {
-       margin: auto;
-       display: inline-block;
- 
-   }
-   
+
    a.menu {
        text-decoration: none;
-       color:white;
+       color:#525B76;
        display: block;
-       padding:10px;
+       padding: 10px;
        border-radius: 3px;
-       letter-spacing: 3px;
        font-weight: bold;
-       font-size: 10px;
-       text-align: center;
- 
-    
-    }
+       font-size: 14px;
+       width:100px;
+   }
    
    a.menu:hover {
-       background-color: black;
-       color:white;
+       background-color:#525B76;
+       color:#C4F1BE;
        transition: 300ms ease-in-out;
    }
    
@@ -348,10 +298,11 @@ h1.portfolio {
        margin: auto;
        margin-top:10px;
        height:fit-content;
-       width:fit-content;
+       width:95vw;
        text-align: center;
        padding:10px;
        box-sizing:border-box;
+      
    
        
    }
@@ -359,7 +310,7 @@ h1.portfolio {
    h1 {
        margin: auto;
        font-size: 40px;
-       color:white;
+       color:#525B76;
        padding: 5px;
    
        
@@ -367,55 +318,38 @@ h1.portfolio {
    
    h1.middlesection {
        margin: auto;
-       font-size: 50px;
+       font-size:50px;
        display: block;
+       background-color:#525B76;
        color:white;
-       background-color: black;
        padding: 5px;
+       box-shadow: 3px 3px 3px #525B76;
        
        
    }
    
-   h1.logo {
-       margin: auto;
-       margin-left: 0px;
-       font-size:20px;
-       display: block;
-       background-color: white;
-       color:deepskyblue;
-       box-shadow: 3px 3px 3px black;
-       padding: 3px;
-       border-radius: 3px;
-       letter-spacing: 4px;
-       cursor: pointer;
-       margin-top: 0px;
-   }
    
    img.profil {
        margin: auto;
        margin-top:20px;
-       height:200px;
-       width:200px;
+       height:150px;
+       width:150px;
        border-radius: 50%;
-       border:5px solid black;
-       filter:drop-shadow(3px 3px 3px black);
+       border: 4px solid #525B76;
+   
    }
    
-   #whoami {
-       margin: auto;
-       margin-top: 50px;
-       height:fit-content;
-       width: 100%;
-       border: 1px dashed white;
-       padding: 20px;
-       text-align: justify;
+   img.social {
+       box-shadow: 3px 3px 3px black;
+       border-radius: 50%;
+       padding: 5px;
    }
    
    h3 {
        font-size: 20px;
        margin: auto;
        margin-top: 10px;
-       color: white;
+       color:#525B76;
        word-spacing: 5px;
        letter-spacing: 5px;
    }
@@ -423,37 +357,7 @@ h1.portfolio {
    a.social {
        text-decoration:none;
        background-color: none;
-   }
-   
-   #portfolio {
-     margin:auto;
-     margin-top:5px;
-     display: flex;
-     flex-direction: row;
-     justify-content:space-around;
-     align-items: center;
-     width:95vw;
-     flex-wrap: wrap;
-     gap: 5px;
-   
-   }
-   
-   div.portfolio {
-     width:95%;
-   }
-   
-   img.portfolio {
-   
-       width:100%;
-       margin-top: 15px;
-       border: 3px solid white;
-       box-shadow: 3px 3px 3px black;
-   }
-   
-   img.portfolio:hover {
-       cursor: pointer;
-       transition: 300ms ease-in-out;
-       transform:scale(1.1)
+       
    }
    
    img.arrow {
@@ -466,32 +370,23 @@ h1.portfolio {
        padding:0px;
    }
    
-   
-   h1.portfolio {
-       margin-top: 30px;
-       padding:20px;
-       
-   }
-   
-    
-   
-   
-   #code {
-       color: white;
-       font-size: 16px;
-       height: 50px;
-       width:100%;
+   #portfoliocontainer {
+       height: fit-content;
+       width:90vw;
        margin: auto;
-   }
-    
-    hr {
-       margin: auto;
-       margin-top:40px;
-       color: white;
-       width:5%;
-       height:1px;
-       border:1px solid white;
+       margin-top: 100px;
+       box-sizing: border-box;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       align-items: center;
    }
    
+   #portfoliocontainer > a > img {
+       height: 250px;
+       width:90vw;
+       margin-top: 5px;
+       box-shadow: 3px 3px 3px #525B76;
+   }
    
    }
