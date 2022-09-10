@@ -60,7 +60,7 @@ img.social:hover {
     transition: 400ms ease-in-out;
 }
 
-ul {
+#topmenu > ul {
     margin: auto;
     height: 100%;
     width:fit-content;
