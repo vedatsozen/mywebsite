@@ -60,7 +60,7 @@ img.social:hover {
     transition: 400ms ease-in-out;
 }
 
-#topmenu > ul {
+ul {
     margin: auto;
     height: 100%;
     width:fit-content;
@@ -69,7 +69,6 @@ img.social:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style:none;
 
   
 }
@@ -174,18 +173,36 @@ img.arrow {
 
 #portfoliocontainer {
     height: fit-content;
-    width:90vw;
+    width:fit-content;
     margin: auto;
     margin-top: 100px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap:10px;
 }
 
 #portfoliocontainer > a > img {
-    height: 500px;
-    width: 1000px;
+    height:500px;
+    width:600px;
     margin-top: 5px;
-    box-shadow: 3px 3px 3px #525B76;
+    box-shadow: 0 0 20px black;
 }
+
+#portfoliocontainer > a > img:hover {
+    height:500px;
+    width:600px;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 400ms ease-in-out;
+
+}
+
+
 
 }
 
