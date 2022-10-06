@@ -193,8 +193,8 @@ img.arrow {
 }
 
 #portfoliocontainer > a > img:hover {
-    height:500px;
-    width:600px;
+    height:300px;
+    width:400px;
     box-shadow: 0 0 20px black;
     cursor: pointer;
     transform: scale(1.1);
