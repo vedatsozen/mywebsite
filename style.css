@@ -9,14 +9,13 @@
     background-color:#38BD55;
     text-align: center;
     margin:auto 0;
-    padding:0px;
+    padding: 10px;
     width: 90vw;
-    box-sizing:border-box;
 }
 
 *, body,html {
     scroll-behavior: smooth !important;
-    overflow-y:hidden;
+    
 }
 
 #hamburger {
@@ -45,9 +44,11 @@
     background-color:#BFD1BF;
     position: absolute;
     top: 0px;
-    right: -400px;
+    left:-600px;
     z-index: 1;
     padding: 0px;
+ 
+  
    
 }
 
@@ -59,7 +60,7 @@
     background-color: #BFD1BF;
     position: absolute;
     top: 0px;
-    right:0px;
+    left:0px;
     transition: 400ms ease-in-out;
 }
 
@@ -71,7 +72,7 @@
     background-color: #BFD1BF;
     position: absolute;
     top: 0px;
-    right:-400px;
+    left:-600px;
     transition: 400ms ease-in-out;
 
 
