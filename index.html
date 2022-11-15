@@ -12,6 +12,19 @@
 </head>
 <body>
 
+<!-- HAMBURGER MENU -->
+
+<div id="slidingmenu">
+    <ul>
+        <li><img src="images/cross.png" id="cross"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="https://www.buymeacoffee.com/vedatsozen">Buy me a coffee</a></li>
+    </ul>
+</div>
+
+<img id="hamburger" src="images/hamburger.png">
+
 <!-- MENU -->
 
 <div id="menu">
@@ -22,6 +35,8 @@
 </div>
 
 <!-- PROFIL PHOTO -->
+
+<div id="containerall">
 
 <img class="profilfoto" src="images/profilfoto.jpg">
 
@@ -37,6 +52,8 @@
     <a href="https://www.github.com/vedatsozen" target="_blank"><img src="images/github.png"></a>
     <a href="https://www.codepen.io/vedatsozen" target="_blank"><img src="images/codepen.png"></a>
     <a href="https://www.twitter.com/vedatsozen" target="_blank"><img src="images/twitter.png"></a>
+</div>
+
 </div>
 
 <hr>
@@ -61,4 +78,17 @@
 </div>
 
 </body>
+<script>
+
+document.getElementById("hamburger").addEventListener("click", function() {
+document.getElementById("slidingmenu").classList.add("slidein");
+document.getElementById("slidingmenu").classList.remove("slideout");
+});
+
+document.getElementById("cross").addEventListener("click", function() {
+document.getElementById("slidingmenu").classList.add("slideout");
+document.getElementById("slidingmenu").classList.remove("slidein");
+});
+
+</script>
 </html>
