@@ -77,6 +77,8 @@
 <a href="https://easytodolist123.netlify.app" target="_blank"><img src="images/p12.png"></a>
 
 </div>
+    
+<button id="gototop">Go to Top</button>
 
 </body>
 <script>
@@ -92,6 +94,25 @@ document.getElementById("slidingmenu").classList.remove("slidein");
 });
     
 $(document).ready(function() {
+     $(window).scroll(function() {
+        if ($(this).scrollTop() > 100 ) {
+            $("#gototop").show();
+          
+        }
+
+        else  {
+            $("#gototop").hide();
+            
+        }
+    })
+
+    $("#gototop").click(function() {
+        $("html, body").animate({scrollTop:0},1000);
+    })
+    
+    
+    
+    
     $("#portfolioli").click(function() {
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
