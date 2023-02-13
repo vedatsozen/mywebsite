@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 <div id="menu">
     <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a id="portfolioli" href="#portfolio">PORTFOLIO</a></li>
     </ul>
 </div>
 
@@ -89,6 +90,14 @@ document.getElementById("cross").addEventListener("click", function() {
 document.getElementById("slidingmenu").classList.add("slideout");
 document.getElementById("slidingmenu").classList.remove("slidein");
 });
-
+    
+$(document).ready(function() {
+    $("#portfolioli").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        },1000);
+    });
+});
+    
 </script>
 </html>
