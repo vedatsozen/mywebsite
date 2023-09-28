@@ -30,8 +30,8 @@
 }
 
 #cross {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: none;
     margin: auto;
     margin-top: 0px;
@@ -57,7 +57,7 @@
     margin: auto;
     height:fit-content;
     width:100vw;
-    background-color: #BFD1BF;
+    background-color:white;
     position: absolute;
     top: 0px;
     left:0px;
@@ -69,7 +69,7 @@
     margin: auto;
     height:fit-content;
     width:100vw;
-    background-color: #BFD1BF;
+    background-color:white;
     position: absolute;
     top: 0px;
     left:-600px;
@@ -85,13 +85,16 @@
     justify-content:flex-start;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 #slidingmenu > ul > li > a {
-    color:#1f6e30;
-    font-size:35px;
+    color:purple;
+    font-size:25px;
     letter-spacing: 3px;
     text-decoration: none;
+    margin: auto;
+  
 
 }
 
@@ -149,42 +152,41 @@ img.profilfoto {
     box-shadow: 0 0 20px #000000;
 }
 
-h1.hello {
+h2.hello {
     margin: auto;
     margin-top:10px;
-    font-size:3em;
+    font-size:2em;
     color: #000000;
 }
 
-h1.vedat {
+h2.vedat {
     margin: auto;
     margin-top:10px;
-    font-size:3em;
+    font-size:2em;
     color: #000000;
 }
 
 span {
     margin: auto;
     margin-top: 10px;
-    font-size:1em;
+    font-size:1.2em;
     color: #BFD1BF;
 }
 
-h1.frontend {
+h2.frontend {
     margin: auto;
     margin-top: 20px;
-    font-size:2em;
+    font-size:1em;
     background-color: #000000;
     color: #BFD1BF;
-    width:90vw;
-    padding-left: 10px;
-    padding-right: 10px;
+    width:80vw;
+ 
 }
 
-h1.interactive {
+h2.interactive {
     margin: auto;
     margin-top: 20px;
-    font-size:2em;
+    font-size:0.8em;
     color: #000000;
 }
 
@@ -244,8 +246,15 @@ hr {
 h1.portfolio {
     margin: auto;
     margin-top:20px;
-    font-size:3em;
+    font-size:2em;
     color: #000000;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
 }
 
 #container {
@@ -280,12 +289,16 @@ h1.portfolio {
     right:10px;
     display: none;
     padding: 5px 7px;
-    background-color:forestgreen;
+    background-color:black;
     color: white;
     cursor: pointer;
     font-size: 18px;
     border: none;
     border-radius: 4px;
+}
+
+button#gototop:active {
+    transform: scale(0.9);
 }
   
  }
