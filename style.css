@@ -7,6 +7,8 @@
       --white:white;
       
 }
+
+
 body {
       text-align: center;
       padding: 0px;
@@ -123,7 +125,13 @@ img#ok {
       bottom: 20px;
       right: 20px;
       cursor: pointer;
-      cursor: pointer;
+      z-index: 100;
+      display: none;
+}
+
+img#ok:hover {
+      transform: scale(1.2);
+      transition: 400ms ease;
 }
 
 #siteler {

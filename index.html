@@ -39,7 +39,7 @@
       </section>
 
 
-<img id="ok" src="ok.png">
+<a href="#"><img id="ok" src="ok.png"></a>
 
 <script>
 
@@ -61,23 +61,28 @@ $("#portfolioa").click(()=> {
 
 })
 
-let ok = document.getElementById("ok");
+$("#ok").click(()=> {
 
-ok.style.display = "none";
+$('html, body').animate({
+                  scrollTop: $("#home").offset().top
+            }, 700);
 
-let scrollY = window.scrollY;
+})
 
-if ( scrollY > 200 ) {
 
-ok.style.display = block;
-
-}
-
-else {
+window.addEventListener("scroll", function() {
+    let ok = document.getElementById("ok");
+    let scrollY = window.scrollY;
+    if (scrollY > 200) {
+      ok.style.display = "block";
+    } else {
       ok.style.display = "none";
-}
+    }
+  });
 
 });
+
+
 
 let siteler = [
 {
