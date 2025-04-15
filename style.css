@@ -24,152 +24,23 @@ body {
       font-style: normal;
 }
 
-nav {
-      height: 60px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      z-index: 100;
-      background-color: var(--renk1);
-      box-shadow: 0 0 10px black;
-    
+nav > a {
+      letter-spacing: 2px;
 }
 
-nav ul {
-      padding: 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
+nav > a:active {
+      transform: scale(0.9);
 }
 
-nav ul li {
-      display: inline-block;
-}
-
-nav ul li a {
-     
-      color: white;
-      font-size: 20px;
-      letter-spacing: 4px;
+#siteler > a > img:hover {
+      transition: all 0.5s;
+      transform: translateY(-5px);
       cursor: pointer;
-      padding: 7px 10px;
-      display: block;
+      box-shadow: 0 0 20px black;
 }
 
-nav ul li a:hover {
-      color: var(--renk2);
-      transition: 400ms ease;
+i#ok:active {
+      transform: scale(0.9);
 }
 
-section {
-      height: 100vh;
-      width: 100%;
-     
-}
-
-#home {
-      background-color: var(--renk1);
-}
-
-img.profile {
-      height:200px;
-      width:200px;
-      margin: auto;
-      margin-top: 100px;
-      border-radius: 50%;
-      border:5px solid white;
-     
-}
-
-h1.home {
-      margin: auto;
-      font-size: 50px;
-}
-
-h3.home {
-      margin: auto;
-      margin-top: 20px;
-      font-size: 20px;
-}
-
-.home {
-      color: var(--white);
-}
-
-span {
-      background-color: var(--renk3);
-      color: white;
-      padding: 5px;
-}
-
-section#portfolio {
-      background-color: var(--renk1);
-      padding-top: 20px;
-      height: fit-content;
-}
-
-h1.baslik {
-      margin: auto;
-      font-size:60px;
-      letter-spacing: 5px;
-      color: var(--white);
-}
-
-img#ok {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      cursor: pointer;
-      z-index: 100;
-      display: none;
-}
-
-img#ok:hover {
-      transform: scale(1.2);
-      transition: 400ms ease;
-}
-
-#siteler {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      height: fit-content;
-      width:100%;
-      gap: 5px;
-}
-
-#siteler > a {
-      margin-top: 20px;
-      height: 300px;
-      width:48% !important;
-      border: 5px solid white;
-      cursor: pointer;
-    }
-
-#siteler > a > img {
-      height:100%;
-      width:100%;
-}
-
-#siteler > a:hover {
-      box-shadow: 0 0 10px black;
-}
-
-img.icon {
-      margin: auto;
-      margin-top: 30px;
-      height: 50px;
-      width: 50px;
-}
-
-img.icon:hover {
-      transform: scale(1.2);
-      transition: 400ms ease;
-}
+/*
