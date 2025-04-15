@@ -26,6 +26,9 @@
       <a class="portfolioa text-xl font-bold text-gray-800 hover:text-gray-600 ml-10" href="#">
         Portfolyom
       </a>
+      <a class="videolara text-xl font-bold text-gray-800 hover:text-gray-600 ml-10" href="#">
+        Ekran Kayıtları
+      </a>
 </nav>
 
 <nav class="mobilenav fixed top-0 h-20 w-screen flex md:hidden flex-row justify-end items-center pr-8 gap-2">
@@ -92,6 +95,20 @@
     </div>
 </section>
 
+<section id="videolar" class="h-fit w-screen flex flex-col flex-start items-center mt-8">
+    <h2 class="text-[10vw] md:text-6xl font-bold text-gray-800 w-full text-center">EKRAN KAYITLARI</h2>
+    <p class="text-center mt-4 text-center text-[3vw] md:text-xl">Yapmış olduğum bazı işlerin ekran kayıtlarını görmek için üzerine tıklayınız.</p>
+
+    <div class="mt-12 h-fit w-screen grid grid-cols-1 md:grid-cols-2 flex justify-center items-center flex-wrap px-8 gap-4">
+        <video src="videolar/video1.mp4" class="h-96 border-2 object-cover" controls></video>
+        <video src="videolar/video2.mp4" class="h-96 border-2 object-cover" controls></video>
+        <video src="videolar/video3.mp4" class="h-96 border-2 object-cover" controls></video>
+        <video src="videolar/video4.mp4" class="h-96 border-2 object-cover" controls></video>
+        <video src="videolar/video5.mp4" class="h-96 border-2 object-cover" controls></video>
+        <video src="videolar/video6.mp4" class="h-96 border-2 object-cover" controls></video>
+    </div>
+
+</section>
 <footer class=" h-fit w-screen mt-8 text-white p-12">
     <div class="footer-content flex flex-col justify-center items-center gap-4">
         <div class="flex flex-col justify-center items-center gap-4">
@@ -128,6 +145,13 @@ $(document).ready(() => {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top - 100
+        }, 700);
+    });
+
+    $(".videolara").click((e) => {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#videolar").offset().top - 100
         }, 700);
     });
 
